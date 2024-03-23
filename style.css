@@ -1,0 +1,420 @@
+    /* Reset CSS */
+    * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: Arial, sans-serif;
+        line-height: 1.6;
+        
+    }
+
+    .container {
+        width: 80%;
+        margin: auto;
+    }
+
+    .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .text {
+        width: 60%; /* Adjust width as needed */
+    }
+
+    #home .image {
+        width: 65%; /* Adjust width as needed */
+        bottom: 0;
+        right: 0;
+    }
+
+    #home .image img {
+        max-width: 100%; /* Adjust the maximum width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-left: 80px;
+    }
+
+    header {
+        background-image: url('images/final.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+        background-size: cover; /* Ensure the background image covers the entire viewport */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed;
+        color: #333;
+        padding: 20px 0;
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        z-index: 1000;
+    }
+
+    header h1 {
+        float: left;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Beautiful font */
+    }
+
+    header nav {
+        float: right;
+        display: flex;
+        height: 100%;
+    }
+
+    header nav ul {
+        list-style: none;
+        display: flex;
+        align-items: center;
+        height: 100%; 
+    }
+
+    header nav ul li {
+        margin-top: 10px;
+        margin-left: 40px;  
+    }
+
+    header nav ul li a {
+        color: #333;
+        text-decoration: none;
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold; /* Beautiful font */
+        
+    }
+
+    #home .section {
+        height: 100vh;
+        overflow-y: scroll;
+        scroll-behavior: smooth; /* Smooth scrolling between sections */
+    }
+
+    #home .content {
+        padding-top: 60px; /* Adjust based on header height */
+    }
+
+    footer {
+        background-image: url('images/final.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+        background-size: cover; /* Ensure the background image covers the entire viewport */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed;
+        color: #333f;
+        text-align: center;
+        padding: 10px 0;
+        position: fixed;
+        bottom: 0;
+        width: 100%;
+    }
+
+    .section {
+        display: none;
+    }
+
+    .content {
+        margin-top: 0; /* Remove top margin */
+        min-height: 100vh;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .section.active {
+        display: block;
+    }
+
+    /* Add styles for each section */
+    /* Add styles for each section */
+    #about, #projects, #contact, #home-section, #resume {
+        background-image: url('images/final.jpg'); /* Replace 'path/to/your/image.jpg' with the actual path to your image */
+        background-size: cover; /* Ensure the background image covers the entire viewport */
+        background-position: center; /* Center the background image */
+        background-attachment: fixed; /* Change this color to your desired shade of grey */
+        padding: 20px;
+        text-align: center;
+    }
+
+
+    /* Ensure smooth scrolling between sections */
+    html {
+        scroll-behavior: smooth;
+    }
+
+    .section {
+        scroll-snap-type: y mandatory; /* Enable mandatory scroll snapping */
+        overflow-y: scroll; /* Enable vertical scrolling for smooth transitions */
+        -webkit-overflow-scrolling: touch; /* Enable smooth scrolling on iOS devices */
+    }
+
+    #home {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Beautiful font */
+    }
+
+    #home nav ul li a {
+        text-decoration: none; /* Remove default underline */
+        position: relative; /* Needed for absolute positioning */
+        font-size: 1.2em; /* Initial font size */
+    }
+
+    #home nav ul li a i {
+        margin-right: 5px; /* Adjust spacing between icon and text */
+    }
+
+    #home nav ul li a:hover {
+        text-decoration: underline; /* Underline on hover */
+        font-size: 1.4em; /* Increase font size on hover */
+    }
+
+    #home nav ul li a:hover i {
+        font-size: 1.4em; /* Increase icon size on hover */
+    }
+
+
+    #home-section .text h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; /* Beautiful font */
+        font-size: 5.5em; /* Adjust the font size as needed */
+        color: #333; /* Adjust the color as needed */
+        margin-bottom: 20px; /* Adjust the margin as needed */
+    }
+
+    #home-section .social-links img {
+        width: 40px; /* Adjust the width as needed */
+        height: auto; /* Maintain aspect ratio */
+        margin-right: 10px; /* Adjust the margin as needed */
+    }
+
+    /* Add styles for the "about" section */
+    #about {
+        display: flex;
+        align-items: center; /* Align children vertically */
+    }
+      
+    #about .container {
+        flex: 1; /* Take remaining space */
+        margin-left: 100px;
+        height: 200px;
+        margin-top: 190px; /* Add some space between image and text */
+    }
+      
+    #about .image {
+        width: 32%; /* Adjust image width */
+        margin-left: 130px;
+    }
+    #about .image img {
+        max-width: 100%; /* Make sure image doesn't exceed container width */
+        border-top-left-radius: 100px; /* Round the top-left corner */
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px; /* Round the top-left corner */
+        border-bottom-right-radius: 100px;
+        border: 2px solid #000;
+    }
+      
+    #about .container h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold;
+        padding-bottom: 6px;
+        font-size: 2.4em;
+    }
+      
+    #about .container p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        max-width: 600px;
+        font-size: 1.2em;
+    }
+      
+    #about .interests-container {
+        /* Center align the interests heading */
+        margin-top: 20px; /* Reduced margin for positioning */
+        margin: 0 auto; /* Center the container horizontally */ /* Removed unnecessary width property */
+    }
+      
+      #about .interests-container h3 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-weight: bold; /* Add space between paragraph and interests heading */
+        font-size: 2.4em;
+      }
+      
+      #about .interests-container p {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        font-size: 2.8em;
+      }
+      
+      #about .container h2, #about .container p {
+        /* Existing styles for font-family, etc. */
+        max-width: 600px; /* Adjust as needed for desired width */
+        margin: auto; /* Center content horizontally within container */
+      }
+      
+      #about .container .paragraph-left-aligned {
+        text-align: left;
+        margin-bottom: 40px; /* Left-align only this specific paragraph */
+        font-weight: 500;
+      }
+      
+      #resume .container {
+        max-width: 800px; /* Adjust container width as needed */
+        margin: 0 auto; /* Center the container */
+      }
+      
+      #resume h2 {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        color: #333; /* Heading color */
+        font-size : 6.4em;
+        margin-bottom: 30px;
+      }
+      
+      #resume button {
+        background-image: url('images/small.png'); /* Light gray background */
+        border: none; /* Remove default border */
+        color: #333; /* Dark gray text */
+        padding: 15px 30px; /* Inner padding */
+        font-size: 3.2em; /* Font size */
+        font-weight: bold; /* Bold text */
+        cursor: pointer; /* Indicate clickable element */
+        transition: all 0.2s 
+      }
+      
+      #resume button:hover {
+        background-image: url('images/final.jpg');
+        color : #333 ;/* Slightly darker on hover */
+        box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+        border-top-left-radius: 100px; /* Round the top-left corner */
+        border-top-right-radius: 100px;
+        border-bottom-left-radius: 100px; /* Round the top-left corner */
+        border-bottom-right-radius: 100px;
+
+      }
+
+    #contact .container {
+        margin-top: 250px;
+        left : 50%; /* Adjust margin-top as needed to move the container up */
+    }
+    #contact .container h2{
+        margin-bottom : 30px;
+        font-size : 3.4em;
+    }
+
+    #contact .container p {
+        display: inline-block; /* Ensure each paragraph is displayed on one line */
+        margin: 0; /* Remove default margins */
+        margin-right: 40px;
+        font-size : 1.6em;
+        transition: opacity 0.5s ease, transform 0.5s ease;
+    }
+    
+    #contact .container p a{
+        color : #333;
+        text-decoration: none;
+        transform: translateY(0);
+    }
+
+    .project-cubes {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+    }
+    
+    .project-cube {
+        width: 200px;
+        height: 200px;
+        background-color: #f5f4f2;
+        padding: 20px;
+        text-align: center;
+        transition: transform 0.3s ease;
+    }
+    
+    .project-cube:hover {
+        transform: scale(1.05);
+    }
+    
+    .github-img {
+        width: 40px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        vertical-align: middle; /* Align image vertically with text */
+        margin-left: 5px; /* Add space between text and image */
+        margin-right: 5px; /* Add space between image and adjacent text */ 
+    }
+
+    .github-img:hover {
+        width: 50px; /* Adjust width as needed */
+        height: auto; /* Maintain aspect ratio */
+        vertical-align: middle; /* Align image vertically with text */
+        margin-left: 5px; /* Add space between text and image */
+        margin-right: 5px; 
+    }
+    
+
+    #projects .container h2 {
+        /*color: #333; /* Color for the heading */
+        font-size: 4.5em; /* Font size for the heading */
+        margin-bottom: 20px; /* Add bottom margin to the heading */
+    }
+
+    #projects .container p{
+        /*color : #333;*/
+        font-size : 1.6em;
+        margin-bottom: 20px;
+    }
+    
+    #projects .container {
+        margin-top: -60px;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: center;
+        height: 100vh; /* Set the height to the viewport height */
+    }
+    
+    .project-cubes {
+        /*background-color: #333;*/
+        display: flex;
+        flex-wrap: wrap;
+        gap: 20px;
+        justify-content: center; /* Center the project cubes horizontally */
+        margin: 20px;
+        text-align: center;    
+        align-items: center; 
+        border-top-left-radius: 90px; /* Round the top-left corner */
+        border-top-right-radius: 90px;
+        border-bottom-left-radius: 90px; /* Round the top-left corner */
+        border-bottom-right-radius: 90px; 
+    }
+    
+    .project-cube {
+        width: 300px;
+        background-color: #333;
+        padding: 40px;
+        text-align: center;
+        transition: transform 0.3s ease;
+        margin: 50px;
+        align-items: center;
+        border-top-left-radius: 60px; /* Round the top-left corner */
+        border-top-right-radius: 60px;
+        border-bottom-left-radius: 60px; /* Round the top-left corner */
+        border-bottom-right-radius: 60px;
+    }
+    
+    .project-cube img {
+        max-width: 100%;
+        height: auto;
+        margin-bottom: 10px;
+    }
+    
+    .project-cube h3 {
+        font-size: 1.5em;
+        margin-top: 25px;
+        line-height: 1.5;
+        color : white;
+        text-decoration: none !important;
+    }
+    
+    .project-cube p {
+        font-size: 1em;
+        color: white;
+        text-decoration: none;
+    }
+    
+    .project-cube:hover {
+        transform: scale(1.05);
+    }
+    
+    

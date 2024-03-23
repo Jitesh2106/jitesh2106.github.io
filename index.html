@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>My Portfolio</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+
+</head>
+<body>
+    <div id="home" class="section">
+        <header>
+            <div class="container">
+                <h1>Portfolio</h1>
+                <nav>
+                    <ul>
+                        <li><a href="#home-section"><i class="fas fa-home"></i> Home</a></li>
+                        <li><a href="#about"><i class="fas fa-user"></i> About me</a></li>
+                        <li><a href="#resume"><i class="fas fas fa-file"></i> Resume</a></li>
+                        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
+                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
+                    </ul>
+                </nav>
+            </div>
+        </header>
+
+        <section id="home-section" class="content">
+            <div class="container">
+                <div class="content-wrapper">
+                    <div class="text">
+                        <h2>Jitesh Parapoil</h2>
+                        <div class="social-links">
+                            <a href="https://github.com/Jitesh2106"><img src="images/gh.png" alt="GitHub"></a>
+                            <a href="https://www.linkedin.com/in/jitesh-parapoil/"><img src="images/link.webp" alt="LinkedIn"></a>
+                            <!-- Add other social media links as needed -->
+                        </div>
+                    </div>
+                    <div class="image"> <!-- Ensure only this image is affected -->
+                        <img src="images/jit.png" alt="Jitesh's Image">
+                    </div>
+                </div>
+            </div>
+        </section>
+            
+
+        <section id="about" class="content">
+            <div class="image">
+              <img src="images/jitu.jpeg" alt="Your Image">
+            </div>
+            <div class="container">
+              <h2 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">About Me</h2>
+              <p class="paragraph-left-aligned" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333">Driven Computer Engineering graduate student at UCF with a strong skillset in Machine Learning, Software Development, and Data Analysis. Experienced in tackling complex problems using intelligent algorithms and data-driven approaches. Currently working as a Graduate Teaching Assitant for the courses "Computer Science 1" and "Algorithms in Machine Learning".</p>
+              <div class="interests-container">
+                <h3 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Interests</h3>
+                <p id="interests" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Machine Learning</p>
+              </div>
+            </div>
+          </section>
+
+          <section id="resume" class="content">
+            <div class="container">
+              <button id="download-resume">
+                RESUMÉ <i class="fas fa-download"></i>
+              </button>
+            </div>
+          </section>
+          
+          
+          <section id="projects" class="content">
+            <div class="container">
+                <h2 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Projects</h2>
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"> Visit my <a href="https://github.com/Jitesh2106"><img img class="github-img" src="images/gh.png" alt="GitHub"></a> for more projects</p>
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Here are some of my recent projects:</p>
+                <div class="project-cubes">
+                    <div class="project-cube">
+                        <a href="https://github.com/Jitesh2106/RecSys_BERT"style="text-decoration:none">
+                        <h3 calss ="bert" style="margin-top: 6px; text-decoration:none;">BERT Recommendation System</h3></a>
+                    </div>
+                    <div class="project-cube">
+                        <a href="https://github.com/Jitesh2106/Neural-Network-From-Scratch"style="text-decoration:none">
+                        <h3 class="project-title-2" style="text-decoration:none">Neural Network from scratch</h3></a>
+                    </div>
+                    <div class="project-cube">
+                        <a href="https://github.com/Jitesh2106/Multi-label-Classification-using-ViT-and-DenseNet"style="text-decoration:none">
+                        <h3 class="project-title-2">Multi-label image classification</h3></a>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        
+        
+        <section id="contact" class="content">
+            <div class="container">
+                <h2 id="contact-details" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Contact Details</h2>
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><i class="fas fa-envelope"></i><span class="icon-text"> : <a href="mailto:parapoiljitesh@gmail.com">parapoiljitesh@gmail.com</a></span></p>
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><i class="fas fa-phone"></i><span class="icon-text"> : +1 6892669802</span></p>
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><i class="fas fa-map-marker-alt"></i><span class="icon-text"> : Orlando, Florida, USA</span></p>
+            </div>
+        </section>
+        
+        
+        <footer>
+            <div class="container">
+                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><b><i>"Minimalism is not a lack of something. It's simply the perfect amount of something." - Nicholas Burroughs</p></i></b>
+            </div>
+        </footer>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
