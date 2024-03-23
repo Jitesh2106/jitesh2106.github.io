@@ -18,7 +18,7 @@ This portfolio website is built using only HTML, CSS, and JavaScript, following 
 - **Smooth Navigation**: Smooth scrolling and intuitive navigation make browsing effortless.
 
 ## Usage
-To view the website, simply open the `index.html` file in a web browser. From there, you can navigate through the different sections using the menu links or by scrolling down the page.
+To view the website, simply open the `https://jitesh2106.github.io/' in a web browser. From there, you can navigate through the different sections using the menu links or by scrolling down the page.
 
 ---
 
