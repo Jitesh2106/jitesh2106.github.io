@@ -3,114 +3,269 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>My Portfolio</title>
+    <title>Jitesh Parapoil - Portfolio</title>
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
-
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
 <body>
-    <div id="home" class="section">
-        <header>
-            <div class="container">
-                <h1>Portfolio</h1>
-                <nav>
-                    <ul>
-                        <li><a href="#home-section"><i class="fas fa-home"></i> Home</a></li>
-                        <li><a href="#about"><i class="fas fa-user"></i> About me</a></li>
-                        <li><a href="#resume"><i class="fas fas fa-file"></i> Resume</a></li>
-                        <li><a href="#projects"><i class="fas fa-folder-open"></i> Projects</a></li>
-                        <li><a href="#contact"><i class="fas fa-envelope"></i> Contact</a></li>
-                    </ul>
-                </nav>
+    <!-- Navigation -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <span class="logo-text">JP</span>
             </div>
-        </header>
+            <ul class="nav-menu">
+                <li><a href="#home" class="nav-link active"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="#about" class="nav-link"><i class="fas fa-user"></i> About</a></li>
+                <li><a href="#resume" class="nav-link"><i class="fas fa-file-alt"></i> Resume</a></li>
+                <li><a href="#projects" class="nav-link"><i class="fas fa-code"></i> Projects</a></li>
+                <li><a href="#contact" class="nav-link"><i class="fas fa-envelope"></i> Contact</a></li>
+            </ul>
+            <div class="hamburger">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
 
-        <section id="home-section" class="content">
-            <div class="container">
-                <div class="content-wrapper">
-                    <div class="text">
-                        <h2>Jitesh Parapoil</h2>
-                        <div class="social-links">
-                            <a href="https://github.com/Jitesh2106"><img src="images/gh.png" alt="GitHub"></a>
-                            <a href="https://www.linkedin.com/in/jitesh-parapoil/"><img src="images/link.webp" alt="LinkedIn"></a>
-                            <!-- Add other social media links as needed -->
+    <!-- Hero Section -->
+    <section id="home" class="hero">
+        <div class="hero-container">
+            <div class="hero-content">
+                <div class="hero-text">
+                    <div class="greeting">
+                        <span class="wave">👋</span>
+                        <span>Hello, I'm</span>
+                    </div>
+                    <h1 class="hero-name">Jitesh Parapoil</h1>
+                    <p class="hero-title">Software Developer</p>
+                    <p class="hero-subtitle">Master’s in Computer Engineering with a specialization in Machine Learning and Intelligent Systems</p>
+                    <div class="hero-cta">
+                        <a href="#contact" class="btn btn-primary">Get In Touch</a>
+                        <a href="#projects" class="btn btn-secondary">View Projects</a>
+                    </div>
+                    <div class="social-links">
+                        <a href="https://github.com/Jitesh2106" target="_blank" class="social-link">
+                            <i class="fab fa-github"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/jitesh-parapoil/" target="_blank" class="social-link">
+                            <i class="fab fa-linkedin"></i>
+                        </a>
+                    </div>
+                </div>
+                <div class="hero-image">
+                    <div class="image-container">
+                        <div class="image-bg"></div>
+                        <img src="images/jitesh.jpeg" alt="Jitesh Parapoil" class="profile-img">
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="about">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">About Me</h2>
+                <div class="section-line"></div>
+            </div>
+            <div class="about-content">
+                <div class="about-image">
+                    <div class="image-wrapper">
+                        <img src="images/jitu.jpeg" alt="Jitesh Parapoil">
+                        <div class="image-overlay"></div>
+                    </div>
+                </div>  
+                <!-- /* <span class="highlight">Data Analysis</span> */ -->
+                <div class="about-text">
+                    <p class="about-description">
+                        Recent Master’s graduate in Computer Engineering from UCF, specializing in Machine Learning and Intelligent Systems. I have hands-on experience 
+                        in <span class="highlight">Software development</span>, and <span class="highlight">Machine Learning</span> through research and internships. 
+                        Focused on the development of practical, data-driven strategies to address complex technical and business challenges
+                    </p>
+                    <p class="about-description">
+                        Currently working as a Research Assistant at CREOL!
+                    </p>
+                    <div class="interests">
+                        <h3>Interests</h3>
+                        <div class="interest-tags">
+                            <span class="tag">Software Development</span>
+                            <span class="tag">Machine Learning</span>
+                            <span class="tag">Deep Learning</span>
+                            <span class="tag">Data Science</span>
+                            <span class="tag">Artificial Intelligence</span>
+                            <span class="tag">Natural Language Processing</span>
+                            <span class="tag">Computer Vision</span>
+                            <span class="tag">Data Analysis</span>
+                            <span class="tag">Data Visualization</span>
                         </div>
                     </div>
-                    <div class="image"> <!-- Ensure only this image is affected -->
-                        <img src="images/jit.png" alt="Jitesh's Image">
-                    </div>
                 </div>
             </div>
-        </section>
-            
+        </div>
+    </section>
 
-        <section id="about" class="content">
-            <div class="image">
-              <img src="images/jitu.jpeg" alt="Your Image">
+    <!-- Resume Section -->
+    <section id="resume" class="resume">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Resume</h2>
+                <div class="section-line"></div>
             </div>
-            <div class="container">
-              <h2 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">About Me</h2>
-              <p class="paragraph-left-aligned" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333">Driven Computer Engineering graduate student at UCF with a strong skillset in Machine Learning, Software Development, and Data Analysis. Experienced in tackling complex problems using intelligent algorithms and data-driven approaches. Currently working as a Graduate Teaching Assitant for the courses "Computer Science 1" and "Algorithms in Machine Learning".</p>
-              <div class="interests-container">
-                <h3 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Interests</h3>
-                <p id="interests" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Machine Learning</p>
-              </div>
-            </div>
-          </section>
-
-          <section id="resume" class="content">
-            <div class="container">
-              <button id="download-resume">
-                RESUMÉ <i class="fas fa-download"></i>
-              </button>
-            </div>
-          </section>
-          
-          
-          <section id="projects" class="content">
-            <div class="container">
-                <h2 style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Projects</h2>
-                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"> Visit my <a href="https://github.com/Jitesh2106"><img img class="github-img" src="images/gh.png" alt="GitHub"></a> for more projects</p>
-                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Here are some of my recent projects:</p>
-                <div class="project-cubes">
-                    <div class="project-cube">
-                        <a href="https://github.com/Jitesh2106/RecSys_BERT"style="text-decoration:none">
-                        <h3 calss ="bert" style="margin-top: 6px; text-decoration:none;">BERT Recommendation System</h3></a>
+            <div class="resume-content">
+                <div class="resume-card">
+                    <div class="resume-icon">
+                        <i class="fas fa-file-pdf"></i>
                     </div>
-                    <div class="project-cube">
-                        <a href="https://github.com/Jitesh2106/Neural-Network-From-Scratch"style="text-decoration:none">
-                        <h3 class="project-title-2" style="text-decoration:none">Neural Network from scratch</h3></a>
-                    </div>
-                    <div class="project-cube">
-                        <a href="https://github.com/Jitesh2106/Multi-label-Classification-using-ViT-and-DenseNet"style="text-decoration:none">
-                        <h3 class="project-title-2">Multi-label image classification</h3></a>
-                    </div>
+                    <h3>Download Resume</h3>
+                    <p>Get a comprehensive overview of my experience, skills, and achievements.</p>
+                    <button id="download-resume" class="btn btn-primary">
+                        <i class="fas fa-download"></i>
+                        Download PDF
+                    </button>
                 </div>
             </div>
-        </section>
-        
-        
-        
-        <section id="contact" class="content">
-            <div class="container">
-                <h2 id="contact-details" style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;">Contact Details</h2>
-                <p style="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; color: #333;">
-                    <a href="mailto:parapoiljitesh@gmail.com">
-                        <i class="fas fa-envelope"></i><span class="icon-text"> : parapoiljitesh@gmail.com</span>
-                    </a>
+        </div>
+    </section>
+
+    <!-- Projects Section -->
+    <section id="projects" class="projects">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Projects</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Here are some of my recent projects. Visit my 
+                    <a href="https://github.com/Jitesh2106" target="_blank" class="github-link">
+                        <i class="fab fa-github"></i> GitHub
+                    </a> 
+                    for more projects.
                 </p>
-                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><i class="fas fa-mobile-alt"></i><span class="icon-text"> : +1 6892669802</span></p>
-                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><i class="fas fa-map-marker-alt"></i><span class="icon-text"> : Orlando, Florida, USA</span></p>
             </div>
-        </section>
-        
-        
-        <footer>
-            <div class="container">
-                <p style ="font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;color : #333;"><b><i>"Minimalism is not a lack of something. It's simply the perfect amount of something." - Nicholas Burroughs</p></i></b>
+            <div class="projects-grid">
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-robot"></i>
+                    </div>
+                    <h3>BERT Recommendation System</h3>
+                    <p>Advanced recommendation system using BERT for natural language understanding and personalized suggestions.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">BERT</span>
+                        <span class="tech-tag">ML</span>
+                    </div>
+                    <a href="https://github.com/Jitesh2106/RecSys_BERT" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-brain"></i>
+                    </div>
+                    <h3>Neural Network from Scratch</h3>
+                    <p>Implementation of neural networks from ground up using only NumPy, demonstrating deep understanding of ML fundamentals.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">Python</span>
+                        <span class="tech-tag">NumPy</span>
+                        <span class="tech-tag">Deep Learning</span>
+                    </div>
+                    <a href="https://github.com/Jitesh2106/Neural-Network-From-Scratch" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
+                <div class="project-card">
+                    <div class="project-icon">
+                        <i class="fas fa-image"></i>
+                    </div>
+                    <h3>Multi-label Image Classification</h3>
+                    <p>Computer vision project using Vision Transformer (ViT) and DenseNet for multi-label image classification tasks.</p>
+                    <div class="project-tech">
+                        <span class="tech-tag">PyTorch</span>
+                        <span class="tech-tag">ViT</span>
+                        <span class="tech-tag">Computer Vision</span>
+                    </div>
+                    <a href="https://github.com/Jitesh2106/Multi-label-Classification-using-ViT-and-DenseNet" target="_blank" class="project-link">
+                        <i class="fas fa-external-link-alt"></i>
+                    </a>
+                </div>
             </div>
-        </footer>
-    </div>
+        </div>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Get In Touch</h2>
+                <div class="section-line"></div>
+                <p class="section-subtitle">
+                    Let's connect and discuss opportunities in machine learning and software development.
+                </p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email</h4>
+                            <a href="mailto:parapoiljitesh@gmail.com">parapoiljitesh@gmail.com</a>
+                        </div>
+                    </div>
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone</h4>
+                            <span>+1 (689) 266-9802</span>
+                        </div>
+                    </div>
+                    <div class="contact-item location-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Location</h4>
+                            <span>Orlando, Florida, USA</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <p class="footer-quote">
+                    "Minimalism is not a lack of something. It's simply the perfect amount of something."
+                    <span class="quote-author">- Nicholas Burroughs</span>
+                </p>
+                <div class="footer-social">
+                    <a href="https://github.com/Jitesh2106" target="_blank" class="social-link">
+                        <i class="fab fa-github"></i>
+                    </a>
+                    <a href="https://www.linkedin.com/in/jitesh-parapoil/" target="_blank" class="social-link">
+                        <i class="fab fa-linkedin"></i>
+                    </a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2025 Jitesh Parapoil. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
 
     <script src="script.js"></script>
 </body>
